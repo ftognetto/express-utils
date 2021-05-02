@@ -1,0 +1,22 @@
+{
+  "name": "@quantos/express-utils",
+  "version": "1.0.29",
+  "description": "Quantos utils for express",
+  "author": "fabriziotognetto <info@quantos.it>",
+  "main": "dist/index.js",
+  "private": "true",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.7",
+    "nodemon": "^2.0.2",
+    "ts-loader": "^5.3.3",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.5"
+  }
+}
