@@ -1,6 +1,6 @@
 {
   "name": "@quantos/express-utils",
-  "version": "1.0.29",
+  "version": "1.0.3",
   "description": "Quantos utils for express",
   "author": "fabriziotognetto <info@quantos.it>",
   "main": "dist/index.js",
