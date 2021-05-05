@@ -1,7 +1,7 @@
 
 import { getHttpStatus } from './http_status';
 
-export class ApiError {
+export class ApiError extends Error {
 
     status: string;
     code: number;
@@ -10,6 +10,7 @@ export class ApiError {
     debugMessage: string | null;
 
     constructor(code: number, message: string, error?: any) {
+        super(message);
         if (!error) {
             if (message) { error = message; } 
             else { error = 'An error occurred.'; }
@@ -36,6 +37,7 @@ export class ApiError {
             this.message = message;
         }
         this.debugMessage = debugMessage;
+        
     }
 
     static badRequest = (reason?: string) => new ApiError(400, reason || '');
