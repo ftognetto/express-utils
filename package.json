@@ -1,9 +1,10 @@
 {
   "name": "@quantos/express-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Quantos utils for express",
   "author": "fabriziotognetto <info@quantos.it>",
   "main": "dist/index.js",
+  "repository": "github:quantosapplications/express-utils",
   "scripts": {
     "build": "tsc"
   },
