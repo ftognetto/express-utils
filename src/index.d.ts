@@ -1,1 +1,1 @@
-declare module '@bigartwall/express-utils';
+declare module '@quantos/express-utils';
