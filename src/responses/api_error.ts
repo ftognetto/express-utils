@@ -6,7 +6,6 @@ export class ApiError extends Error {
     status: string;
     code: number;
     timestamp: string;
-    message: string;
     debugMessage: string | null;
 
     constructor(code: number, message: string, error?: any) {
@@ -49,6 +48,9 @@ export class ApiError extends Error {
     static error = (message: string, error?: any) => new ApiError(500, message, error);
 
     toResponse = (res: any) => res.status(this.code).json(this);
+    toJSON() {
+        return { message: this.message, status: this.status, code: this.code, timestamp: this.timestamp, debugMessage: this.debugMessage, stack: this.stack.toString() };
+    }
    
 }
 
